@@ -1,0 +1,15 @@
+{
+  "event": "pipeline_completed",
+  "timestamp": "2026-11-11T22:09:22.954936-03:00",
+  "input_sha256": "388eff679557d08ac19f463d025de5e0b4adc482537c8456d19934d78621fd47",
+  "selected_model": "M2_interaccion",
+  "artifacts": [
+    "metrics.json",
+    "model_comparison.csv",
+    "effects.csv",
+    "group_costs.csv",
+    "residual_diagnostics.json",
+    "dashboard_groups.json"
+  ],
+  "note": "Registro de ejecución de esta sesión, no evidencia de semanas previas."
+}

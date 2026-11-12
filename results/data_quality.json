@@ -1,0 +1,29 @@
+{
+  "rows_raw": 1338,
+  "rows_validated": 1338,
+  "columns_raw": 7,
+  "missing_values": 0,
+  "duplicate_excess_rows": 1,
+  "duplicate_policy": "Conservar 1338 registros de referencia (E2); mantener copias exactas en el mismo split/fold.",
+  "duplicate_group_overlap_train_holdout": 0,
+  "negative_or_zero_charges": 0,
+  "sha256_input": "388eff679557d08ac19f463d025de5e0b4adc482537c8456d19934d78621fd47",
+  "ranges": {
+    "age": {
+      "min": 18.0,
+      "max": 64.0
+    },
+    "bmi": {
+      "min": 15.96,
+      "max": 53.13
+    },
+    "children": {
+      "min": 0.0,
+      "max": 5.0
+    },
+    "charges": {
+      "min": 1121.8739,
+      "max": 63770.42801
+    }
+  }
+}

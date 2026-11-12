@@ -1,0 +1,124 @@
+{
+  "executed_at": "2026-11-12T01:06:12.360Z",
+  "timezone": "America/Santiago",
+  "environment": "Chromium headless local, HTTP 127.0.0.1, sin red externa",
+  "desktop": {
+    "width": 1440,
+    "height": 1100
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "horizontal_document_overflow": false
+  },
+  "load_measurement": "performance.now después de load y render sin red, 5 navegaciones de esta sesión; no prueba de producción",
+  "load_ms": [
+    622.2000000029802,
+    101.5,
+    86.90000000596046,
+    84.5,
+    82
+  ],
+  "max_load_ms": 622.2000000029802,
+  "passes_under_3s": true,
+  "filter_checks": [
+    {
+      "smoker": "all",
+      "dimension": "bmi",
+      "n": 1338,
+      "groups": 2,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "all",
+      "dimension": "age",
+      "n": 1338,
+      "groups": 3,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "all",
+      "dimension": "region",
+      "n": 1338,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "all",
+      "dimension": "children",
+      "n": 1338,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "no",
+      "dimension": "bmi",
+      "n": 1064,
+      "groups": 2,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "no",
+      "dimension": "age",
+      "n": 1064,
+      "groups": 3,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "no",
+      "dimension": "region",
+      "n": 1064,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "no",
+      "dimension": "children",
+      "n": 1064,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "yes",
+      "dimension": "bmi",
+      "n": 274,
+      "groups": 2,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "yes",
+      "dimension": "age",
+      "n": 274,
+      "groups": 3,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "yes",
+      "dimension": "region",
+      "n": 274,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    },
+    {
+      "smoker": "yes",
+      "dimension": "children",
+      "n": 274,
+      "groups": 4,
+      "counts_match": true,
+      "weighted_mean_matches": true
+    }
+  ],
+  "javascript_errors": [],
+  "limitations": "Viewport móvil emulado. No se probó un teléfono físico ni una conexión de producción."
+}

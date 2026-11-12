@@ -1,0 +1,86 @@
+{
+  "seed": 42,
+  "selection_rule": "Menor MAE USD OOF en CV de 5 folds de entrenamiento; AIC log como evidencia complementaria.",
+  "selected_model": "M2_interaccion",
+  "formulas": {
+    "M1_aditivo": "log_charges ~ age + C(sex) + bmi_c + children + C(smoker) + C(region)",
+    "M2_interaccion": "log_charges ~ age + C(sex) + bmi_c * C(smoker) + children + C(region)"
+  },
+  "n_train": 1069,
+  "n_holdout": 269,
+  "group_split": "Copias exactas nunca se separan. GroupShuffleSplit 20%; CV StratifiedGroupKFold por smoker.",
+  "model_comparison": [
+    {
+      "model": "Baseline_media",
+      "aic_train_log": null,
+      "cv_mae_usd": 9208.712227143782,
+      "cv_rmse_usd": 12265.59887589485,
+      "cv_r2_usd": -0.0013758659460547662,
+      "cv_bias_usd": -0.08772292593461388,
+      "cv_r2_log": -0.002882237218118755
+    },
+    {
+      "model": "M1_aditivo",
+      "aic_train_log": 1321.608464177646,
+      "cv_mae_usd": 5099.1488350961245,
+      "cv_rmse_usd": 9252.176099708613,
+      "cv_r2_usd": 0.4302197581152377,
+      "cv_bias_usd": 1341.9000177323444,
+      "cv_r2_log": 0.758690843861404
+    },
+    {
+      "model": "M2_interaccion",
+      "aic_train_log": 1257.8818826364086,
+      "cv_mae_usd": 5039.51827224215,
+      "cv_rmse_usd": 9757.560223706027,
+      "cv_r2_usd": 0.3662731824902069,
+      "cv_bias_usd": 1502.1230017737166,
+      "cv_r2_log": 0.772625070099733
+    }
+  ],
+  "holdout_selected": {
+    "mae_usd": 4505.953336072026,
+    "rmse_usd": 8414.67116051968,
+    "r2_usd": 0.46162267536349244,
+    "bias_usd": 1198.5386784070329,
+    "r2_log": 0.8062963923324291
+  },
+  "holdout_baseline": {
+    "mae_usd": 8904.185756379535,
+    "rmse_usd": 11486.615320192483,
+    "r2_usd": -0.0032210050320073957,
+    "bias_usd": 650.862830236127
+  },
+  "mae_reduction_vs_baseline_holdout": 0.49395110801190667,
+  "smearing_train": {
+    "no": 1.1436154309775544,
+    "yes": 1.0956857306700665,
+    "global": 1.133886015667241
+  },
+  "summary": {
+    "n": 1338,
+    "mean_cost_usd": 13270.422265141257,
+    "median_cost_usd": 9382.033,
+    "total_cost_usd": 17755824.990759,
+    "smokers_n": 274,
+    "smokers_share": 0.20478325859491778,
+    "smokers_cost_share": 0.4945849334745335,
+    "top_10pct_n": 134,
+    "top_10pct_cost_share": 0.31982427963868176,
+    "cost_over_20000_share": 0.2040358744394619
+  },
+  "planned_mae_reference_usd": 4824.0,
+  "cv_mae_meets_reference": false,
+  "elapsed_seconds": 0.9812551999930292,
+  "executed_at_santiago": "2026-11-11T22:09:22.954936-03:00",
+  "python": "3.12.14",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  }
+}

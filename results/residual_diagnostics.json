@@ -1,0 +1,17 @@
+{
+  "sample": "entrenamiento",
+  "n": 1069,
+  "breusch_pagan": {
+    "lm": 65.64554227510344,
+    "p_value": 1.0803064479063167e-10
+  },
+  "jarque_bera": {
+    "statistic": 1649.9202798765234,
+    "p_value": 0.0
+  },
+  "p_value_note": "Un p-valor calculado como 0.0 indica subdesbordamiento numérico, no probabilidad exactamente cero.",
+  "condition_number": 197.874130515967,
+  "max_cooks_distance": 0.021156067455540117,
+  "n_cooks_above_4_over_n": 73,
+  "interpretation": "Revisar p-valores y gráficos. Se utilizan errores estándar HC3. La normalidad/varianza constante pueden fallar. La independencia entre afiliados no puede verificarse sin identificadores. Asociación observacional, sin causalidad."
+}
