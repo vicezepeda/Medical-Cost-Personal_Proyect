@@ -2,6 +2,14 @@ name: Verificación reproducible
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'data/**'
+      - 'requirements.txt'
+      - 'notebooks/**'
+      - 'dashboard/**'
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,10 +24,10 @@ jobs:
           cache: pip
       - name: Instalar entorno
         run: python -m pip install -r requirements.txt
-      - name: Pruebas de datos, particiones y agregados
-        run: python -m pytest -q
       - name: Ejecutar análisis completo
         run: python -m src.analysis
+      - name: Verificar artefactos recién reproducidos
+        run: python -m pytest -q
       - name: Exportar dashboard
         run: python dashboard/app.py --export
       - uses: actions/upload-artifact@v4
