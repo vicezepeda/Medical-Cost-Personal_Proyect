@@ -16,7 +16,7 @@ Herramienta de gestión: GitHub Issues, con un registro versionado de plan, ejec
 
 | Issue | Entregable | Criterio de salida | Evidencia esperada |
 |---|---|---|---|
-| [#5](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/5) | E5. Informe, presentación y piloto | Informe de 8 páginas revisado, PPTX de 12 diapositivas, PDF de 12 páginas, guion de 600 s y propuesta | `entregables/`, `docs/EP6_guion_y_defensa.md`, `docs/propuesta_piloto.md`; publicación documental final pendiente al corte |
+| [#5](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/5) | E5. Informe, presentación y piloto | Informe de 8 páginas revisado, PPTX de 12 diapositivas, PDF de 12 páginas, guion de 600 s y propuesta | `entregables/`, `docs/EP6_guion_y_defensa.md`, `docs/propuesta_piloto.md`; documentos publicados, defensa y aprobación pendientes |
 
 ## Pendiente de validación externa
 
@@ -35,4 +35,6 @@ Herramienta de gestión: GitHub Issues, con un registro versionado de plan, ejec
 - Se marca completo técnico solo después de una prueba real. Las aprobaciones externas se mantienen abiertas.
 - Las semanas S1–S12 son la línea base relativa. No se infiere atraso, puntualidad ni horas reales.
 
-Última revisión: **R2 del 11/11/2026**. Issues #2 y #4 cerrados por criterios técnicos; #3 abierto por KPI, calibración y aceptación; #1 abierto por firma/representatividad; #5 abierto por publicación documental final, exposición y aprobación. El [commit técnico](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/commit/48503c55c7a9edd2d27028d42f90c14ff946970a) está publicado. La ejecución de Actions y el commit documental final se verificarán al concluir. RF6 Could permanece diferido.
+Última revisión: **R2 del 11/11/2026**. Issues #2 y #4 cerrados por criterios técnicos; #3 abierto por KPI, calibración y aceptación; #1 abierto por firma/representatividad; #5 abierto por exposición y aprobación. Documentos y evidencias publicados, con reproducción aprobada en Actions. RF6 Could permanece diferido.
+
+Publicación documental verificada el 11/11/2026 a las 22:16:54 America/Santiago, commit `0dad7369ed68b02f7aa202128a121904f0376b04`. Los tres entregables coinciden con los blobs remotos. CI aprobado: pipeline y seis pruebas en Ubuntu. [Publicación](../evidence/publicacion_verificada.json), [CI](../evidence/github_actions.json) y [estado de Issues](../evidence/github_issues.json). E5 conserva pendiente la defensa y aprobación; E3 conserva desempeño, calibración y aceptación.

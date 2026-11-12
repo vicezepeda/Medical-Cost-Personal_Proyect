@@ -1,0 +1,75 @@
+{
+  "snapshot_at_santiago": "2026-11-11T22:16:54-03:00",
+  "issues": [
+    {
+      "number": 5,
+      "title": "E5 · Informe, presentación y propuesta de piloto",
+      "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/5",
+      "state": "open",
+      "state_reason": null,
+      "body": "Criterio EP4 S12: informe, presentación de 10 minutos y propuesta de piloto, con aprobación externa.\n\n- [x] Informe EP5 de ocho páginas, revisado visualmente\n- [x] PPTX editable y PDF EP6 de 12 diapositivas/páginas\n- [x] Guion de 600 segundos, demo y 19 preguntas de defensa\n- [x] Propuesta de piloto con supuestos y cálculos aclarados\n- [x] Evidencias publicadas y enlazadas en main, commit 0dad736\n- [x] Reproducción limpia en GitHub Actions y seis pruebas aprobadas\n- [ ] Realizar exposición y responder ronda de preguntas\n- [ ] Obtener aprobación del patrocinador/docente\n\n[Informe](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/entregables/EP5_Informe_Implementacion.pdf) · [PPTX](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/entregables/EP6_Presentacion.pptx) · [PDF](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/entregables/EP6_Presentacion.pdf) · [Guion](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/docs/EP6_guion_y_defensa.md) · [Piloto](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/docs/propuesta_piloto.md) · [Matriz](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/docs/matriz_cumplimiento.md)\n\n[Actions aprobado](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/actions/runs/43133074760). La entrega documental no acredita defensa oral ni aprobación. El KPI MAE y la calibración siguen abiertos en #3. Los documentos no inventan firmas, horas, gastos ni historial semanal.",
+      "created_at_utc": "2026-11-12T01:01:02Z",
+      "updated_at_utc": "2026-11-12T01:16:54Z",
+      "closed_at_utc": null,
+      "assignees": [
+        "vicezepeda"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "E4 · Dashboard y validación de uso",
+      "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/4",
+      "state": "closed",
+      "state_reason": "completed",
+      "body": "Criterio EP4 S9: filtros operativos, carga <3 s y visible en celular.\n\n- [x] Filtro tabaquismo y comparaciones IMC, edad, región e hijos\n- [x] Sólo agregados: celdas n>=5 y aviso n<20\n- [x] 12 combinaciones comprobadas; conteos y medias ponderadas coinciden con los agregados\n- [x] Cinco navegaciones locales, máximo 622,2 ms\n- [x] Móvil emulado 390×844 px sin desborde horizontal del documento\n- [x] Cero errores JavaScript\n\n[Aplicación](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/dashboard/app.py) · [Prueba](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/evidence/dashboard_validation.json) · [Captura escritorio](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/evidence/dashboard_desktop.png) · [Captura móvil](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/evidence/dashboard_mobile.png)\n\nCierre técnico en entorno local Chromium headless. No se probó teléfono físico ni rendimiento de producción. Se inicia con `python dashboard/app.py` y se abre http://127.0.0.1:8501/.",
+      "created_at_utc": "2026-11-12T01:01:00Z",
+      "updated_at_utc": "2026-11-12T01:12:10Z",
+      "closed_at_utc": "2026-11-12T01:12:10Z",
+      "assignees": [
+        "vicezepeda"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "E3 · Modelos de factores y costos por grupo",
+      "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/3",
+      "state": "open",
+      "state_reason": null,
+      "body": "Criterio EP4 S7: comparar M1/M2 log(charges), AIC, CV5, efectos, residuos y costos grupales.\n\n- [x] Pipeline ejecutado con semilla 42 y particiones agrupadas sin fuga\n- [x] M1/M2 comparados: MAE CV 5.099,15 / 5.039,52 USD; AIC 1.321,61 / 1.257,88\n- [x] P-valores HC3, diagnósticos, estimaciones por grupos y reserva final\n- [x] Notebook ejecutado y seis pruebas aprobadas\n- [ ] Resolver referencia MAE CV de 4.824 USD: M2 excede 4,47%\n- [ ] Recalibrar y validar el sesgo del grupo fumador (+15,21% en reserva) con otra muestra\n- [ ] Validar interpretación y aceptar resultados con patrocinador\n\n[Resultados](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/tree/main/results) · [Código](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/src/analysis.py) · [Notebook](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/notebooks/01_implementacion.ipynb)\n\nM2 mejora MAE sólo 1,17% frente a M1, pero empeora RMSE y R² USD. No se reutilizó la reserva para optimizar. Los porcentajes exp(beta)-1 representan media geométrica condicional; las asociaciones no prueban causalidad. La evaluación técnica está completa y la aceptación operativa permanece abierta.",
+      "created_at_utc": "2026-11-12T01:00:59Z",
+      "updated_at_utc": "2026-11-12T01:12:09Z",
+      "closed_at_utc": null,
+      "assignees": [
+        "vicezepeda"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "E2 · Base validada y diccionario",
+      "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/2",
+      "state": "closed",
+      "state_reason": "completed",
+      "body": "Criterio EP4 S4: 1.338 registros, cero nulos y diccionario.\n\n- [x] Validar esquema, categorías, rangos y nulos\n- [x] Auditar el duplicado; conservarlo y mantener sus copias en el mismo split/fold\n- [x] Entregar diccionario y SHA-256 de la fuente\n\nEvidencias publicadas en commit 48503c5:\n- [Calidad](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/results/data_quality.json)\n- [Diccionario](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/docs/diccionario_datos.md)\n- [Notebook ejecutado](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/notebooks/01_implementacion.ipynb)\n- [Pruebas: 6 aprobadas](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/blob/main/results/logs/pytest.txt)\n\nCierre técnico de esta ejecución del 11/11/2026, America/Santiago. No acredita representatividad de una cartera real; esa validación sigue en #1.",
+      "created_at_utc": "2026-11-12T01:00:58Z",
+      "updated_at_utc": "2026-11-12T01:12:07Z",
+      "closed_at_utc": "2026-11-12T01:12:07Z",
+      "assignees": [
+        "vicezepeda"
+      ]
+    },
+    {
+      "number": 1,
+      "title": "E1 · Formalización y validación de representatividad",
+      "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/issues/1",
+      "state": "open",
+      "state_reason": null,
+      "body": "Criterio EP4 S2: acta firmada por patrocinador y requerimientos priorizados.\n\n- [x] Requerimientos MoSCoW disponibles en plan EP4\n- [ ] Obtener firma del patrocinador\n- [ ] Validar representatividad de la cartera real\n\nEstado inicial: pendiente externo. Registro abierto en esta ejecución del 11/11/2026. No acredita ejecución de semanas anteriores.",
+      "created_at_utc": "2026-11-12T01:00:57Z",
+      "updated_at_utc": "2026-11-12T01:00:57Z",
+      "closed_at_utc": null,
+      "assignees": [
+        "vicezepeda"
+      ]
+    }
+  ]
+}

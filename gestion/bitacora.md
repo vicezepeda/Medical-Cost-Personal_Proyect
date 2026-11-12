@@ -17,8 +17,10 @@ Esta bitácora registra actividades reales de la sesión del **11/11/2026 (Ameri
 | B11 | 11/11/2026 | Publicación técnica en GitHub | [Commit técnico](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/commit/48503c55c7a9edd2d27028d42f90c14ff946970a) | Evidencia técnica publicada; Issues 2 y 4 cerrados técnicamente, 1 y 3 abiertos con pendientes |
 | B12 | 11/11/2026 | Revisión documental EP5 y EP6 | [Informe](../entregables/EP5_Informe_Implementacion.pdf), [PPTX](../entregables/EP6_Presentacion.pptx), [validación EP6](../evidence/EP6_validation.json) | Informe de ocho páginas revisado; PPTX de 12 diapositivas y PDF de 12 páginas; guion de 600 s y 19 preguntas |
 
-La publicación documental final y el resultado de GitHub Actions se agregarán al verificarse. No se registran como realizados o aprobados por anticipado.
+**B13. 11/11/2026 22:16:54 America/Santiago.** Publicación documental verificada en commit `0dad7369ed68b02f7aa202128a121904f0376b04`: 69 archivos, tres entregables con blobs remotos idénticos a los locales. [Registro](../evidence/publicacion_verificada.json).
+
+**B14. 11/11/2026.** GitHub Actions [43133074760](https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/actions/runs/43133074760) concluyó correctamente en Ubuntu: pipeline reproducido y seis pruebas sobre los resultados nuevos aprobadas en 1,56 s. Se adjuntan [log](../evidence/github_actions_resultado.txt) y [snapshot de Issues](../evidence/github_issues.json).
 
 ## Criterio de actualización
 
-Cada cierre de tarea requiere una salida verificable y su enlace. Las tareas con firmas, validación de representatividad o exposición oral permanecen abiertas hasta contar con evidencia de la persona responsable. El estado de una Issue representa su alcance explícito; el cierre técnico de E3 no cierra la aprobación externa G3.
+Cada cierre de tarea requiere una salida verificable y su enlace. Las tareas con firmas, validación de representatividad o exposición oral permanecen abiertas hasta contar con evidencia de la persona responsable. El estado de una Issue representa su alcance explícito; la implementación técnica de E3 no cierra el KPI de desempeño, su aceptación operativa ni la aprobación externa G3.
