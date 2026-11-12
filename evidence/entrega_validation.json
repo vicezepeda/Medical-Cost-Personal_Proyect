@@ -1,0 +1,24 @@
+{
+  "executed_at_santiago": "2026-11-11T22:15:21.136153-03:00",
+  "report_pages": 8,
+  "presentation_slides": 12,
+  "presentation_pdf_pages": 12,
+  "notebook_executed_code_cells": 9,
+  "notebook_errors": 0,
+  "markdown_local_links_missing": [],
+  "visual_review": "Ocho páginas del informe inspeccionadas; páginas 2, 5 y 6 revisadas otra vez tras ajustes. Sin cortes, superposiciones ni tablas divididas.",
+  "artifacts": {
+    "entregables\\EP5_Informe_Implementacion.pdf": {
+      "bytes": 347576,
+      "sha256": "59eab269dabb3d17259a8d012f363536109fd21f4d1c29dc1c274db9d4cd9552"
+    },
+    "entregables\\EP6_Presentacion.pdf": {
+      "bytes": 559597,
+      "sha256": "40ae4741dcd63eb5c144ec2930e9da60ce8644f862e7a8a915547f781216899d"
+    },
+    "entregables\\EP6_Presentacion.pptx": {
+      "bytes": 63323,
+      "sha256": "1d26a7f915728397ca720ca39d7d2d820c88aec336c4327b1d9ccc11f4e3d242"
+    }
+  }
+}

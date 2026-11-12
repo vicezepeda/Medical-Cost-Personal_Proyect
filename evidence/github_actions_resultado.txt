@@ -1,0 +1,24 @@
+Extracto del log real consultado mediante GitHub.
+Run: https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/actions/runs/43133074760
+Commit: 2ac7e4b827dc9ed79adb589cb35d8259ad8ac431
+El log completo permanece disponible en GitHub Actions.
+
+2026-11-12T01:14:09.1139495Z Ubuntu
+2026-11-12T01:14:09.1140214Z 26.04.1
+2026-11-12T01:14:09.1145443Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-12T01:14:11.6151236Z Cache hit for: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-c2fe257b0e694d470458100c0f6443505e9efe84eeaf02a6e83fb1f4018f1bb9
+2026-11-12T01:14:12.3606347Z Cache restored from key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-c2fe257b0e694d470458100c0f6443505e9efe84eeaf02a6e83fb1f4018f1bb9
+2026-11-12T01:14:37.2156700Z ##[group]Run python -m src.analysis
+2026-11-12T01:14:40.6078785Z   "selected_model": "M2_interaccion",
+2026-11-12T01:14:40.6079128Z   "n_train": 1069,
+2026-11-12T01:14:40.6079316Z   "n_holdout": 269,
+2026-11-12T01:14:40.6079779Z     "mae_usd": 4505.953336072007,
+2026-11-12T01:14:40.6079991Z     "rmse_usd": 8414.6711605197,
+2026-11-12T01:14:40.6080189Z     "r2_usd": 0.4616226753634898,
+2026-11-12T01:14:40.6080396Z     "bias_usd": 1198.538678407029,
+2026-11-12T01:14:40.6080606Z     "r2_log": 0.8062963923324282
+2026-11-12T01:14:40.6080985Z   "mae_reduction_vs_baseline_holdout": 0.4939511080119088
+2026-11-12T01:14:40.8140626Z ##[group]Run python -m pytest -q
+2026-11-12T01:14:42.9541838Z 6 passed in 1.56s
+2026-11-12T01:14:43.2135343Z ##[group]Run python dashboard/app.py --export
+2026-11-12T01:14:44.4502953Z Cache hit occurred on the primary key setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-c2fe257b0e694d470458100c0f6443505e9efe84eeaf02a6e83fb1f4018f1bb9, not saving cache.

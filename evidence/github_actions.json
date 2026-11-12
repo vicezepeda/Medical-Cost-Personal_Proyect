@@ -1,0 +1,84 @@
+{
+  "run_id": 43133074760,
+  "url": "https://github.com/vicezepeda/Medical-Cost-Personal_Proyect/actions/runs/43133074760",
+  "commit": "2ac7e4b827dc9ed79adb589cb35d8259ad8ac431",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at_utc": "2026-11-12T01:14:06Z",
+  "updated_at_utc": "2026-11-12T01:14:46Z",
+  "environment": "Ubuntu 26.04.1 LTS, Python 3.12",
+  "jobs": [
+    {
+      "id": 130901697067,
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Instalar entorno",
+          "conclusion": "success"
+        },
+        {
+          "name": "Ejecutar análisis completo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verificar artefactos recién reproducidos",
+          "conclusion": "success"
+        },
+        {
+          "name": "Exportar dashboard",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13906047062,
+      "name": "resultados-reproducidos",
+      "size_in_bytes": 604702,
+      "url": "https://api.github.com/repos/vicezepeda/Medical-Cost-Personal_Proyect/actions/artifacts/13906047062",
+      "archive_download_url": "https://api.github.com/repos/vicezepeda/Medical-Cost-Personal_Proyect/actions/artifacts/13906047062/zip",
+      "expired": false,
+      "created_at": "2026-11-12T01:14:44Z",
+      "expires_at": "2026-12-12T01:14:43Z",
+      "updated_at": "2026-11-12T01:14:44Z",
+      "digest": "sha256:cb3786a682f8e62bffde3e1ef93982a99cd1f3c0e960c0684b54010fed81abdb",
+      "workflow_run": {
+        "id": 43133074760,
+        "repository_id": 1438901071,
+        "head_repository_id": 1438901071,
+        "head_branch": "main",
+        "head_sha": "2ac7e4b827dc9ed79adb589cb35d8259ad8ac431"
+      }
+    }
+  ],
+  "scope": "Instalación limpia, ejecución del pipeline, seis pruebas sobre artefactos recién reproducidos, exportación del dashboard. No incluye prueba de interfaz del navegador en CI."
+}
