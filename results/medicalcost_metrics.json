@@ -1,0 +1,164 @@
+{
+  "model": "Lineal_USD",
+  "seed": 42,
+  "n_rows": 1338,
+  "n_train": 1069,
+  "n_test": 269,
+  "missing_cells": 0,
+  "exact_duplicates": 1,
+  "cv": [
+    {
+      "model": "Media_entrenamiento",
+      "mae_usd": 9208.712227143782,
+      "rmse_usd": 12265.59887589485,
+      "r2_usd": -0.0013758659460549882,
+      "bias_usd": -0.08772292593472278
+    },
+    {
+      "model": "Lineal_USD",
+      "mae_usd": 4232.877618159987,
+      "rmse_usd": 6145.921511588002,
+      "r2_usd": 0.7485835880783605,
+      "bias_usd": 16.091218383884467
+    },
+    {
+      "model": "M1_aditivo",
+      "mae_usd": 5099.148835096124,
+      "rmse_usd": 9252.17609970861,
+      "r2_usd": 0.43021975811523827,
+      "bias_usd": 1341.9000177323467
+    },
+    {
+      "model": "M2_interaccion",
+      "mae_usd": 5039.518272242152,
+      "rmse_usd": 9757.560223706023,
+      "r2_usd": 0.36627318249020757,
+      "bias_usd": 1502.123001773717
+    }
+  ],
+  "mae_reference_usd": 4824.0,
+  "cv_linear_mae_usd": 4232.877618159987,
+  "holdout": {
+    "mae_usd": 4119.820942822389,
+    "rmse_usd": 5883.548218735181,
+    "r2_usd": 0.7367968414408989,
+    "bias_usd": 530.7389483636518
+  },
+  "holdout_baseline": {
+    "mae_usd": 8904.185756379535,
+    "rmse_usd": 11486.615320192483,
+    "r2_usd": -0.0032210050320073957,
+    "bias_usd": 650.862830236127
+  },
+  "holdout_mae_reduction": 0.5373163750688059,
+  "holdout_group_metrics": [
+    {
+      "variable": "sex",
+      "group": "female",
+      "n": 140,
+      "mae_usd": 4126.009687983391,
+      "rmse_usd": 6369.771455637862,
+      "r2_usd": 0.6712694361675994,
+      "bias_usd": -277.8556233205734
+    },
+    {
+      "variable": "sex",
+      "group": "male",
+      "n": 129,
+      "mae_usd": 4113.104475205801,
+      "rmse_usd": 5305.681603012755,
+      "r2_usd": 0.7993546152383801,
+      "bias_usd": 1408.2834447651367
+    },
+    {
+      "variable": "smoker",
+      "group": "no",
+      "n": 212,
+      "mae_usd": 2912.64192905513,
+      "rmse_usd": 4703.61513985514,
+      "r2_usd": 0.3768358291159071,
+      "bias_usd": 180.12972112021603
+    },
+    {
+      "variable": "smoker",
+      "group": "yes",
+      "n": 57,
+      "mae_usd": 8609.679730869042,
+      "rmse_usd": 9004.34061250807,
+      "r2_usd": 0.2838142292966652,
+      "bias_usd": 1834.7592321462555
+    },
+    {
+      "variable": "region",
+      "group": "northeast",
+      "n": 53,
+      "mae_usd": 4553.466428751164,
+      "rmse_usd": 6422.35958812829,
+      "r2_usd": 0.5838125437180699,
+      "bias_usd": 448.87345757088235
+    },
+    {
+      "variable": "region",
+      "group": "northwest",
+      "n": 78,
+      "mae_usd": 4187.018450614176,
+      "rmse_usd": 6283.2466263518645,
+      "r2_usd": 0.6661772255468301,
+      "bias_usd": 1124.6544276865225
+    },
+    {
+      "variable": "region",
+      "group": "southeast",
+      "n": 71,
+      "mae_usd": 4058.8213775393892,
+      "rmse_usd": 5122.734829540637,
+      "r2_usd": 0.844924510016156,
+      "bias_usd": 1003.6044911498425
+    },
+    {
+      "variable": "region",
+      "group": "southwest",
+      "n": 67,
+      "mae_usd": 3763.1993424210273,
+      "rmse_usd": 5708.174791510559,
+      "r2_usd": 0.7512596936269247,
+      "bias_usd": -597.0220951137608
+    }
+  ],
+  "holdout_permutation_importance": [
+    {
+      "feature": "age",
+      "mean_mae_increase_usd": 2058.985243016995,
+      "sd_usd": 176.09376723923899
+    },
+    {
+      "feature": "sex",
+      "mean_mae_increase_usd": -11.258264110199434,
+      "sd_usd": 3.8013529524421314
+    },
+    {
+      "feature": "bmi",
+      "mean_mae_increase_usd": 235.22797205933185,
+      "sd_usd": 91.3717542438719
+    },
+    {
+      "feature": "children",
+      "mean_mae_increase_usd": 45.57079234826206,
+      "sd_usd": 29.386069053402736
+    },
+    {
+      "feature": "smoker",
+      "mean_mae_increase_usd": 5879.396826511673,
+      "sd_usd": 326.3814940707977
+    },
+    {
+      "feature": "region",
+      "mean_mae_increase_usd": 18.887244312313214,
+      "sd_usd": 27.285413274679424
+    }
+  ],
+  "holdout_baseline_mean_usd": 13401.275853581852,
+  "holdout_underestimation_baseline_usd": 4126.661463071703,
+  "holdout_underestimation_model_usd": 1794.540997229369,
+  "holdout_predictions_clipped": 3
+}

@@ -1,0 +1,32 @@
+{
+  "mode": "Prueba local con HTTP y Chromium",
+  "health": {
+    "http_status": 200,
+    "response": {
+      "status": "ok"
+    }
+  },
+  "predict": {
+    "http_status": 200,
+    "request": {
+      "age": 30,
+      "sex": "male",
+      "bmi": 25.0,
+      "children": 0,
+      "smoker": "no",
+      "region": "northeast"
+    },
+    "response": {
+      "predicted_charges": 4335.51
+    }
+  },
+  "invalid_age_http_status": 422,
+  "swagger_http_status": 200,
+  "streamlit": {
+    "local_prediction_visible": true,
+    "input_recalculation": true,
+    "api_local_parity": true,
+    "chart_visible": true,
+    "plan_tab_verified": true
+  }
+}
